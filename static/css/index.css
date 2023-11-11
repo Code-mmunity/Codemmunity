@@ -9,7 +9,7 @@
 }
 body{
 
-    background-image: url("C:/Users/user/OneDrive/바탕 화면/learn/pic1.jpg"); /* 배경 이미지 경로 */
+    background-image: url("/static/image/wallpaper.png"); /* 배경 이미지 경로 */
     background-position: center; 
     background-size: cover;
     background-repeat: no-repeat;
