@@ -7,6 +7,7 @@ Create Date: ${create_date}
 """
 from alembic import op
 import sqlalchemy as sa
+from sqlalchemy_utils import IPAddressType
 ${imports if imports else ""}
 
 # revision identifiers, used by Alembic.
@@ -22,3 +23,4 @@ def upgrade():
 
 def downgrade():
     ${downgrades if downgrades else "pass"}
+
