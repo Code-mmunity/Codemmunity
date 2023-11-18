@@ -18,9 +18,8 @@
         </div>
         <div class="nav-menu" id="navMenu">
             <ul>
-                <li><a href="#" class="link active">Home</a></li>
-                <li><a href="#" class="link">Post</a></li>
-                <li><a href="#" class="link">Services</a></li>
+                <li><a href="/" class="link active">Home</a></li>
+                <li><a href="/post" class="link">Post</a></li>
                 <li><a href="#" class="link">About</a></li>
             </ul>
         </div>
@@ -103,6 +102,29 @@
             </div>
         </div>
     </div>
-</div>   
+</div>
+
+<script>
+
+        // Sign In 버튼 클릭 시 login.html로 이동하는 JavaScript 코드
+
+        document.getElementById("loginBtn").onclick = function () {
+
+            window.location.href = "/login";
+
+        };
+
+        // Sign In 버튼 클릭 시 register.html로 이동하는 JavaScript 코드
+
+        document.getElementById("registerBtn").onclick = function () {
+
+        window.location.href = "/auth/signup";
+
+    };
+
+
+
+    </script>
+
 </body>
 </html>

@@ -19,7 +19,6 @@ class Answer(db.Model):
     ip = db.Column(IPAddressType, unique=True, nullable=False)
 
 class User(db.Model):
-
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(150), unique=True, nullable=False)
     password = db.Column(db.String(200), nullable=False)

@@ -14,10 +14,11 @@ def create_app():
     migrate.init_app(app, db)
 
     # 여기서 views/main_views를 임포트합니다.
-    from views import main_views, question_views, answer_views
+    from views import main_views, question_views, answer_views, auth_views
     app.register_blueprint(main_views.bp)
     app.register_blueprint(question_views.bp)
     app.register_blueprint(answer_views.bp)
+    app.register_blueprint(auth_views.bp)
 
     from src.filter import format_datetime
 
