@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
     <title>Ludiflex</title>
 
 </head>
@@ -21,21 +22,31 @@
 
         <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
 
+            {% if g.user %}
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="{{ url_for('auth.logout') }}">{{ g.user.username }} (로그아웃)</a>
+                </li>
+            </ul>
+            {% else %}
+
             <ul class="navbar-nav">
 
                 <li class="nav-item">
 
-                    <a class="nav-link" href="/signup">계정생성</a>
+                    <a class="nav-link" href="{{ url_for('auth.signup') }}">계정생성</a>
 
                 </li>
 
                 <li class="nav-item">
 
-                    <a class="nav-link" href="/login">로그인</a>
+                    <a class="nav-link" href="{{ url_for('auth.login') }}">로그인</a>
 
                 </li>
 
             </ul>
+
+            {% endif %}
 
         </div>
 
@@ -47,6 +58,11 @@
 
     <script src="{{ url_for('static', filename='jquery-3.7.1.min.js') }}"></script>
     <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+
+    <!-- 자바스크립트 Start -->
+    {% block script %}
+    {% endblock %}
+    <!-- 자바스크립트 End -->
 
 
 </body>
