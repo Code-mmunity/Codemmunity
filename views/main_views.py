@@ -10,11 +10,6 @@ def index():
 
     return render_template('index.html')
 
-@bp.route('/login')
-def login():
-
-    return render_template('login.html')
-
 @bp.route('/post/')
 def post():
     question_list = Question.query.order_by(Question.create_date.desc())
