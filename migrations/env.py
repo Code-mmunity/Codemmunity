@@ -4,7 +4,6 @@ from logging.config import fileConfig
 from flask import current_app
 
 from alembic import context
-
 import sqlalchemy_utils
 
 
