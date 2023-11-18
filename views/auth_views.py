@@ -1,4 +1,4 @@
-from flask import Blueprint, url_for, render_template, flash, request, session, g
+from flask import Blueprint, url_for, render_template, flash, request, session, g, make_response
 from werkzeug.security import generate_password_hash, check_password_hash
 from werkzeug.utils import redirect
 
@@ -45,6 +45,9 @@ def signup():
 @bp.route('/login/', methods=('GET', 'POST'))
 def login():
     form = UserLoginForm()
+
+
+
     if request.method == 'POST' and form.validate_on_submit():
         error = None
         user = User.query.filter_by(username=form.username.data).first()
@@ -61,6 +64,7 @@ def login():
             else:
                 return redirect(url_for('main.index'))
         flash(error)
+
     return render_template('auth/login.html', form=form)
 
 @bp.before_app_request
