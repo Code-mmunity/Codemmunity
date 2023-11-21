@@ -10,3 +10,7 @@
 
 - 백엔드 파일 : app.py (Flask)
 
+### 실행 방법
+
+- flask run  -p 포트번호
+
