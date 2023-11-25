@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/boxicons.min.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+    <title>Ludiflex About</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>code'mmunity</p> 
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="/" class="link active">Home</a></li>
+                    <li><a href="/post" class="link">Post</a></li>
+                    <li><a href="/about" class="link">About</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
+                <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+    </div>
+
+        <div class="description">
+            <h2>We are codemmunity</h2>
+            <p>코드뮤니티에 오신 것을 환영합니다!</p>
+                <P>
+                우리는 학부생, 현업 개발자, 비전공자 등 IT에 관심있는 사람들을 위한 커뮤니티 입니다.</P>
+                <p>
+                대표적인 서비스로는 글의 삭제, 수정, 답글, 추천, 조회수 카운팅 기능이 있으며, <br>
+                OpenSSL을 활용한 기능으로는 1. 로그인 암호화, 2. 쿠키 / 세션 암호화 기능이 있습니다.<br>
+                또한 관리자 페이지가 존재하여 효과적으로 데이터를 관리합니다.
+            </p>
+            <p>
+                본 서비스의 사용은 이러한 결과물을 창출할 것 입니다! </p>
+                <P>
+                1. 다양한 경험과 지식의 획득 <br>
+                2. 네트워킹 협업의 기회<br>
+                3. 오류 해결과 학습<br>
+                4. 프로젝트 공유와 피드백으로 인한 실력의 향상<br>
+                5. 커리어의 발전
+            </p>
+
+            <P>
+                codemmunity와 함께 발전하는 개발자가 될 수 있길 기원합니다.
+            </P>
+            
+            <section id="contact">
+                <p>질문이나 문의사항이 있으면 언제든지 연락주세요!</p>
+                <p>이메일: haruster@hanmail.net</p>
+            </section>
+        </div>
+    </div>
+</div>
+
+    <script>
+        // Sign In 버튼 클릭 시 login.html로 이동하는 JavaScript 코드
+        document.getElementById("loginBtn").onclick = function () {
+            window.location.href = "/auth/login";
+        };
+
+        // Sign In 버튼 클릭 시 register.html로 이동하는 JavaScript 코드
+        document.getElementById("registerBtn").onclick = function () {
+            window.location.href = "/auth/signup";
+        };
+    </script>
+
+</body>
+</html>
