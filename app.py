@@ -1,10 +1,10 @@
-from flask import Flask
+from flask import Flask, render_template
 from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 import config
+from flask_admin import Admin
 from sqlalchemy import MetaData
-
-
+from flask_admin.contrib.sqla import ModelView
 
 
 naming_convention = {
@@ -17,6 +17,10 @@ naming_convention = {
 
 db = SQLAlchemy(metadata=MetaData(naming_convention=naming_convention))
 migrate = Migrate()
+
+def page_not_found(e):
+
+    return render_template('404.html'), 404
 
 def create_app():
     app = Flask(__name__)
@@ -39,7 +43,10 @@ def create_app():
 
     app.jinja_env.filters['datetime'] = format_datetime
 
+    # 오류 페이지
+    app.register_error_handler(404, page_not_found)
+
     return app
 
 if __name__ == '__main__':
-    create_app().run(host='0.0.0.0', port=5027, debug=True)
+    create_app().run(host='0.0.0.0', port=5027, debug=True, ssl_context='adhoc')
