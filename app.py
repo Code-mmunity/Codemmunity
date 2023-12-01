@@ -6,7 +6,6 @@ from flask_admin import Admin
 from sqlalchemy import MetaData
 from flask_admin.contrib.sqla import ModelView
 
-
 naming_convention = {
     "ix": 'ix_%(column_0_label)s',
     "uq": "uq_%(table_name)s_%(column_0_name)s",
