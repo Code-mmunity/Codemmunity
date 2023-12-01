@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1a865c1a-f928-403f-a69a-49802c68b44f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.db" beforeDir="false" afterPath="$PROJECT_DIR$/server.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/main_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/main_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +61,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.APP">
+  <component name="RunManager" selected="Flask server.Flask">
     <configuration name="APP" type="PythonConfigurationType" factoryName="Python">
       <module name="APP" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -109,6 +108,26 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Flask" type="Python.FlaskServer" nameIsGenerated="true">
+      <option name="flaskDebug" value="true" />
+      <module name="APP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$USER_HOME$/PycharmProjects/venv/bin/python" />
+      <option name="SDK_NAME" value="Python 3.7 (PycharmProjects)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Flask server.Flask" />
+      <item itemvalue="Python.APP" />
+      <item itemvalue="Python.models" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -129,7 +148,12 @@
       <workItem from="1700455684807" duration="65000" />
       <workItem from="1700525980258" duration="959000" />
       <workItem from="1700528329502" duration="1783000" />
-      <workItem from="1700921099593" duration="216000" />
+      <workItem from="1700921099593" duration="464000" />
+      <workItem from="1700924373440" duration="378000" />
+      <workItem from="1701054016611" duration="396000" />
+      <workItem from="1701131198067" duration="1546000" />
+      <workItem from="1701348948844" duration="205000" />
+      <workItem from="1701421091169" duration="3670000" />
     </task>
     <servers />
   </component>
@@ -139,5 +163,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/APP$APP.coverage" NAME="APP Coverage Results" MODIFIED="1700167841219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/APP$models.coverage" NAME="models Coverage Results" MODIFIED="1700167945673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/signup_css$Flask.coverage" NAME="Flask Coverage Results" MODIFIED="1701422061691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
