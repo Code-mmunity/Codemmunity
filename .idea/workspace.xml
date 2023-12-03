@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1a865c1a-f928-403f-a69a-49802c68b44f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/question/question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/question/question_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/about.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/auth/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +46,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jeongjun-yeong/Desktop/APP&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jeongjun-yeong/Desktop/Code mmunity&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -154,6 +156,9 @@
       <workItem from="1701131198067" duration="1546000" />
       <workItem from="1701348948844" duration="205000" />
       <workItem from="1701421091169" duration="4572000" />
+      <workItem from="1701527580470" duration="373000" />
+      <workItem from="1701606256209" duration="1086000" />
+      <workItem from="1701621774253" duration="289000" />
     </task>
     <servers />
   </component>

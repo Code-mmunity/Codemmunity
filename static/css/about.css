@@ -7,6 +7,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+#banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #3d3d3d), url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: auto;
+}
+
 body {
     background-image: url("/static/image/wallpaper.png");
     background-position: center;
@@ -19,7 +27,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+}
+
+.about-section p {
+    background-color: #fff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
 }
 
 .wrapper {
@@ -199,7 +212,7 @@ header {
 
 .description {
     position: absolute;
-    top: 55%; 
+    top: 80%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     text-align: center;
@@ -219,3 +232,10 @@ header {
     color: white;
     margin-bottom: 30px; 
 }
+
+.text-box {
+    border : 1px solid black;
+    text-align : center;
+    padding : 20px 0;
+    border-radius: 10px 10px 10px 10px;
+  }
