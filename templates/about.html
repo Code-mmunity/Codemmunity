@@ -5,78 +5,134 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/boxicons.min.css') }}">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="test.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
-    <title>Ludiflex About</title>
+    <title>Ludiflex</title>
 </head>
 
 <body>
 
-    <div class="wrapper">
-        <nav class="nav">
-            <div class="nav-logo">
-                <p>code'mmunity</p> 
-            </div>
-            <div class="nav-menu" id="navMenu">
-                <ul>
-                    <li><a href="/" class="link active">Home</a></li>
-                    <li><a href="/post" class="link">Post</a></li>
-                    <li><a href="/about" class="link">About</a></li>
-                </ul>
-            </div>
-            <div class="nav-button">
-                <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
-                <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
-            </div>
-            <div class="nav-menu-btn">
-                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
-            </div>
-        </nav>
-    </div>
-
+    <table width="10%">
+        <!-- Navigation Section -->
+        <div class="wrapper">
+            <nav class="nav">
+                <div class="nav-logo">
+                    <p>code'mmunity</p> 
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="/" class="link active">Home</a></li>
+                        <li><a href="/post" class="link">Post</a></li>
+                        <li><a href="/about" class="link">About</a></li>
+                        <li><a href="https://github.com/Code-mmunity" class="link">Github</a></li>
+                    </ul>
+                </div>
+                <div class="nav-button">
+                    <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
+                    <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+                </div>
+                <div class="nav-menu-btn">
+                    <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+                </div>
+            </nav>
+        </div>
+    </table>
+    
+    <table width="80%">
         <div class="description">
-            <h2>We are codemmunity</h2>
+            <h1>We are codemmunity</h1>
             <p>코드뮤니티에 오신 것을 환영합니다!</p>
-                <P>
-                우리는 학부생, 현업 개발자, 비전공자 등 IT에 관심있는 사람들을 위한 커뮤니티 입니다.</P>
+            
+            <!-- Community Introduction -->
+            <p>우리는 학부생, 현업 개발자, 비전공자 등 IT에 관심있는 사람들을 위한 커뮤니티 입니다.</p>
+
+            <br>
+            <br>
+    
+            <!-- Community Features -->
+            <div class='text-box'>
+                <h2>대표적인 서비스</h2>
                 <p>
-                대표적인 서비스로는 글의 삭제, 수정, 답글, 추천, 조회수 카운팅 기능이 있으며, <br>
-                OpenSSL을 활용한 기능으로는 1. 로그인 암호화, 2. 쿠키 / 세션 암호화 기능이 있습니다.<br>
-                또한 관리자 페이지가 존재하여 효과적으로 데이터를 관리합니다.
-            </p>
+                    <span>수정</span>
+                    <span>삭제</span>
+                    <span>답글</span>
+                    <br>
+                    <span>추천</span>
+                    <span>조회수 카운팅</span>
+                </p>
+            </div>
+    
+            <br>
+    
+            <div class='text-box'>
+                <h2>OpenSSL을 활용한 기능</h2>
+                <p>
+                    <span>1. 로그인 암호화</span>
+                    <span>2. 세션 암호화</span>
+                    <span>3. API 암호화</span>
+                </p>
+            </div>
+    
+            <br>
+    
+            <div class='text-box'>
+                <h2>관리자 페이지</h2>
+                <p>
+                    <span>효과적으로 데이터 관리</span>
+                </p>
+            </div>
+    
+            <br>
+            <br>
+            <br>
+    
+            <!-- Benefits of Using the Service -->
             <p>
                 본 서비스의 사용은 이러한 결과물을 창출할 것 입니다! </p>
+            <div>
                 <P>
-                1. 다양한 경험과 지식의 획득 <br>
-                2. 네트워킹 협업의 기회<br>
-                3. 오류 해결과 학습<br>
-                4. 프로젝트 공유와 피드백으로 인한 실력의 향상<br>
-                5. 커리어의 발전
-            </p>
+                    1. 다양한 경험과 지식의 획득 <br>
+                    2. 네트워킹 협업의 기회<br>
+                    3. 오류 해결과 학습<br>
+                    4. 프로젝트 공유와 피드백으로 인한 실력의 향상<br>
+                    5. 커리어의 발전
+                </p>
+            </div>
 
+            <br>
+            <br>
+    
+            <!-- Best Wishes -->
             <P>
                 codemmunity와 함께 발전하는 개발자가 될 수 있길 기원합니다.
             </P>
-            
+
+            <br>
+            <br>
+            <br>
+    
+            <!-- Contact Section -->
             <section id="contact">
-                <p>질문이나 문의사항이 있으면 언제든지 연락주세요!</p>
-                <p>이메일: haruster@hanmail.net</p>
+                <p>질문이나 문의사항이 있으면 언제든지 연락주세요!<br>
+                이메일: haruster@hanmail.net</p>
             </section>
         </div>
-    </div>
-</div>
+    </table>
 
-    <script>
-        // Sign In 버튼 클릭 시 login.html로 이동하는 JavaScript 코드
-        document.getElementById("loginBtn").onclick = function () {
-            window.location.href = "/auth/login";
-        };
-
-        // Sign In 버튼 클릭 시 register.html로 이동하는 JavaScript 코드
-        document.getElementById("registerBtn").onclick = function () {
-            window.location.href = "/auth/signup";
-        };
-    </script>
-
+    <table width="10%">
+        <!-- JavaScript for Navigation Buttons -->
+        <script>
+            // Sign In 버튼 클릭 시 login.html로 이동하는 JavaScript 코드
+            document.getElementById("loginBtn").onclick = function () {
+                window.location.href = "/auth/login";
+            };
+    
+            // Sign In 버튼 클릭 시 register.html로 이동하는 JavaScript 코드
+            document.getElementById("registerBtn").onclick = function () {
+                window.location.href = "/auth/signup";
+            };
+        </script>
+    </table>
+    
 </body>
 </html>
