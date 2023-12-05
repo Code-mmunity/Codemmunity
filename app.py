@@ -25,6 +25,12 @@ def create_app():
     app = Flask(__name__)
     app.config.from_object(config)
 
+    # adminPage
+    # set flask_admin (/admin 경로로 이동하면 admin 정보 출력)
+    admin = Admin(app, name='Codemmunity', template_mode='bootstrap3')
+
+
+
     db.init_app(app)
     if app.config['SQLALCHEMY_DATABASE_URI'].startswith("sqlite"):
         migrate.init_app(app, db, render_as_batch=True)
