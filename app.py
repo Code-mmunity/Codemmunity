@@ -5,6 +5,7 @@ import config
 from flask_admin import Admin
 from sqlalchemy import MetaData
 from flask_admin.contrib.sqla import ModelView
+import ssl
 
 naming_convention = {
     "ix": 'ix_%(column_0_label)s',
@@ -56,4 +57,7 @@ def create_app():
     return app
 
 if __name__ == '__main__':
-    create_app().run(host='0.0.0.0', port=5027, debug=True, ssl_context='adhoc')
+
+    ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS)
+    ssl_context.load_cert_chain(certfile='newcert.pem', keyfile='newkey.pem', password='secret') # SSL 인증서 발급 필요
+    create_app().run(host='0.0.0.0', port=5027, debug=True, ssl_context=ssl_context)
