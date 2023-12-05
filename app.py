@@ -25,10 +25,12 @@ def create_app():
     app = Flask(__name__)
     app.config.from_object(config)
 
+    from src.models import User
+
     # adminPage
     # set flask_admin (/admin 경로로 이동하면 admin 정보 출력)
     admin = Admin(app, name='Codemmunity', template_mode='bootstrap3')
-
+    admin.add_view(ModelView(User, db.session))
 
 
     db.init_app(app)
