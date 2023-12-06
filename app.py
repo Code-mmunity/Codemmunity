@@ -27,14 +27,6 @@ def create_app():
     app = Flask(__name__)
     app.config.from_object(config)
 
-    from src.models import User
-
-    # adminPage
-    # set flask_admin (/admin 경로로 이동하면 admin 정보 출력)
-    admin = Admin(app, name='Codemmunity', template_mode='bootstrap3')
-    admin.add_view(ModelView(User, db.session))
-
-
     db.init_app(app)
     if app.config['SQLALCHEMY_DATABASE_URI'].startswith("sqlite"):
         migrate.init_app(app, db, render_as_batch=True)
@@ -52,6 +44,15 @@ def create_app():
 
     app.jinja_env.filters['datetime'] = format_datetime
 
+    from src.models import Question
+    from src.models import Answer
+    from src.models import User
+    from flask_admin.contrib.sqla import ModelView
+
+    admin = Admin(app, name='Codemmunity', template_mode='bootstrap3')
+
+    admin.add_view(ModelView(User, db.session))
+
     # 오류 페이지
     app.register_error_handler(404, page_not_found)
 
@@ -59,6 +60,4 @@ def create_app():
 
 if __name__ == '__main__':
 
-    ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS)
-    ssl_context.load_cert_chain(certfile='newcert.pem', keyfile='newkey.pem', password='secret') # SSL 인증서 발급 필요
-    create_app().run(host='0.0.0.0', port=5027, debug=True, ssl_context=ssl_context)
+    create_app().run(host='0.0.0.0', port=5028, debug=True)
