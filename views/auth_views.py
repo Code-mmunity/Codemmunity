@@ -46,10 +46,9 @@ def signup():
 def login():
     form = UserLoginForm()
 
-
-
     if request.method == 'POST' and form.validate_on_submit():
         error = None
+
         user = User.query.filter_by(username=form.username.data).first()
         if not user:
             error = "존재하지 않는 사용자입니다."
@@ -58,9 +57,15 @@ def login():
         if error is None:
             session.clear()
             session['user_id'] = user.id
+
+            if user.username == 'admin':
+                # Redirect to Flask-Admin page if the user is admin
+                return redirect(url_for('admin.index'))
+
             _next = request.args.get('next', '')
             if _next:
                 return redirect(_next)
+
             else:
                 return redirect(url_for('main.index'))
         flash(error)
